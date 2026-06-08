@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'screens/song_list_screen.dart';
-import 'screens/karaoke_record_screen.dart';
-import 'screens/mastering_screen.dart';
+import 'screens/recording_screen.dart';
+import 'screens/editor_screen.dart';
 
 void main() {
   runApp(const KaraokeApp());
@@ -25,8 +25,8 @@ class KaraokeApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const SongListScreen(),
-        '/record': (context) => const KaraokeRecordScreen(),
-        '/mastering': (context) => const MasteringScreen(),
+        '/record': (context) => const RecordingScreen(),
+        '/editor': (context) => const EditorScreen(),
       },
     );
   }
